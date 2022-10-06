@@ -20,6 +20,12 @@ public class ReadFile {
         }
     }
 
+    void readLine() throws IOException {
+        File file = new File(this.name);
+        List<String> fileContent = Files.readAllLines(file.toPath());
+
+        System.out.println(fileContent.get(0));
+    }
     void readLine(int n) throws IOException {
         File file = new File(this.name);
         List<String> fileContent = Files.readAllLines(file.toPath());
