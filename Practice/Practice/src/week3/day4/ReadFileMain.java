@@ -11,6 +11,8 @@ public class ReadFileMain {
         int N = Integer.parseInt(br.readLine());
 
         ReadFile readFile = new ReadFile("./sample.txt");
-        readFile.readByte(N);
+//        readFile.readByte(N);
+
+        readFile.readLine(N);
     }
 }
