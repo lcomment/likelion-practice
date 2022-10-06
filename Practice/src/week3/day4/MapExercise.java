@@ -110,4 +110,8 @@ public class MapExercise {
         }
         System.out.println(map2);
     }
+
+    boolean isAlphabet(char c) {
+        return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');
+    }
 }
