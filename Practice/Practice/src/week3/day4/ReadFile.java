@@ -10,9 +10,12 @@ public class ReadFile {
         this.name = name;
     }
 
-    byte readByte() throws IOException {
+    void readByte(int n) throws IOException {
         File file = new File(this.name);
         byte[] fileContent = Files.readAllBytes(file.toPath());
-        return fileContent[0];
+
+        for(int i=0 ; i<n ; i++){
+            System.out.println((char)fileContent[i]);
+        }
     }
 }
